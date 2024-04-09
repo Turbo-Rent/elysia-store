@@ -118,7 +118,6 @@ export class Stream<Data extends string | number | boolean | object> {
                 })
                 break
 
-            default:
                 this.stream = new ReadableStream({
                     start: async (controller) => {
                         this.controller = controller
